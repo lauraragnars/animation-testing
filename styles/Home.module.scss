@@ -1,0 +1,36 @@
+.home {
+    &__emotion {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(136, 134, 134, 0.144);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-bottom: 1px soldid black;
+
+        &:nth-child(2) {
+        }
+
+        &__title {
+            font-size: 4rem;
+        }
+
+        &__case {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            position: absolute;
+
+            &:nth-child(3) {
+                top: 20%;
+                left: 20%;
+            }
+
+            &:nth-child(2) {
+                top: 70%;
+                left: 70%;
+            }
+        }
+    }
+}
