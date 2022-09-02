@@ -1,20 +1,11 @@
 import Link from 'next/link';
-import Layout from '../components/Layout/Layout';
 import styles from '../styles/Home.module.scss';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
-
-const variants = {
-    closed: { opacity: 1, width: '150px', left: '70%', top: '70%' },
-    open: { opacity: 1, width: '100vw', height: '50vh', left: 0, top: '50%' },
-};
 
 const duration = 0.7;
 
 export default function Home() {
-    const [click, setCLick] = useState(false);
     return (
-        // <Layout>
         <div className={styles.home}>
             <div className={styles.home__emotion}>
                 <motion.h1
@@ -66,6 +57,5 @@ export default function Home() {
                 </Link>
             </div>
         </div>
-        // </Layout>
     );
 }
