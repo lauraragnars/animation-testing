@@ -32,26 +32,23 @@ export default function Emotion1() {
                     <motion.h1
                         className={styles.emotion1__emotion__title}
                         layout
-                        layoutId="emotiontitle1"
+                        layoutId="emotiontitle2"
                         transition={{ duration: duration }}
                     >
-                        EMOTION 1
+                        EMOTION 2
                     </motion.h1>
                     <motion.div
-                        className={styles.emotion1__emotion__case}
+                        className={styles.emotion1__emotion__case1}
                         layout
-                        layoutId="emotion1"
+                        layoutId="emotion2"
                         transition={{ duration: duration }}
                     ></motion.div>
                     <motion.div
-                        // key={'2'}
-                        // variants={variants2}
-                        // animate={'open'}
-                        // transition={{ duration: duration }}
-                        // exit={'exit'}
-                        layout
-                        layoutId="emotion1-2"
+                        key={'2'}
+                        variants={variants2}
+                        animate={'open'}
                         transition={{ duration: duration }}
+                        exit={'exit'}
                         className={styles.emotion1__emotion__case}
                     ></motion.div>
                 </div>

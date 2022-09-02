@@ -9,16 +9,16 @@ const variants = {
 
 export default function Layout(props) {
     return (
-        <div>
-            <motion.main
-                initial="hidden"
-                animate="enter"
-                exit="exit"
-                variants={variants}
+        <div key={'layout'}>
+            <main
+                // initial="hidden"
+                // animate="enter"
+                // exit="exit"
+                // variants={variants}
                 transition={{ type: 'linear', delay: 0.5 }}
             >
                 {props.children}
-            </motion.main>
+            </main>
         </div>
     );
 }

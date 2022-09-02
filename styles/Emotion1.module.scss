@@ -1,9 +1,4 @@
-.home {
-    scroll-snap-type: y mandatory;
-    overflow-y: auto;
-    height: 100vh;
-    width: 100vw;
-
+.emotion1 {
     &__emotion {
         height: 100vh;
         width: 100vw;
@@ -14,14 +9,19 @@
         position: relative;
         scroll-snap-align: start;
 
+        // &:nth-child(2) {
+        // }
+
         &__title {
             font-size: 4rem;
             position: absolute;
+            top: 20%;
         }
 
         &__case {
             width: 150px;
             height: 150px;
+            left: 0;
             background-color: white;
             position: absolute;
             background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
@@ -30,15 +30,30 @@
             background-size: cover;
 
             &:nth-child(3) {
+                opacity: 0;
                 top: 20%;
                 left: 20%;
-                opacity: 1;
             }
 
             &:nth-child(2) {
-                top: 70%;
-                left: 70%;
+                width: 100vw;
+                height: 50vh;
+                left: 0;
+                top: 60%;
             }
         }
+
+        // &__case1 {
+        //     width: 100vw;
+        //     height: 50vh;
+        //     left: 0;
+        //     top: 60%;
+        //     background-color: white;
+        //     position: absolute;
+        //     background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+        //     background-repeat: no-repeat;
+        //     background-position: center;
+        //     background-size: cover;
+        // }
     }
 }
