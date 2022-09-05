@@ -11,11 +11,11 @@ export default function Layout(props) {
     return (
         <div key={'layout'}>
             <main
-                // initial="hidden"
-                // animate="enter"
-                // exit="exit"
-                // variants={variants}
-                transition={{ type: 'linear', delay: 0.5 }}
+            // initial="hidden"
+            // animate="enter"
+            // exit="exit"
+            // variants={variants}
+            //transition={{ type: 'linear', delay: 0.5 }}
             >
                 {props.children}
             </main>

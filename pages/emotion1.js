@@ -17,18 +17,35 @@ export default function Emotion1() {
                     >
                         EMOTION 1
                     </motion.h1>
-                    <motion.div
+                    {/* <motion.div
                         className={styles.emotion1__emotion__case}
+                        layout={'position'}
+                        layoutId="emotion1"
+                        transition={{ duration: duration }}
+                        style={{
+                            width: '100vw',
+                            height: '50vh',
+                            top: '60%',
+                            left: '0%',
+                            position: 'absolute',
+                        }}
+                    >
+                        
+                    </motion.div> */}
+                    <motion.img
                         layout
                         layoutId="emotion1"
                         transition={{ duration: duration }}
-                    ></motion.div>
-                    <motion.div
-                        layout
-                        layoutId="emotion1-2"
-                        transition={{ duration: duration }}
-                        className={styles.emotion1__emotion__case}
-                    ></motion.div>
+                        style={{
+                            width: '100vw',
+                            height: 'auto',
+                            top: '60%',
+                            left: '0%',
+                            position: 'absolute',
+                            objectFit: 'cover',
+                        }}
+                        src="https://thumbs.dreamstime.com/b/handsome-guy-face-17205111.jpg"
+                    ></motion.img>
                 </div>
             </div>
         </Layout>

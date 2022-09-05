@@ -1,14 +1,14 @@
-.emotion1 {
-    overflow: hidden;
+.case {
+    //overflow-x: hidden;
     &__emotion {
-        height: 100vh;
+        min-height: 100vh;
         width: 100vw;
         background-color: rgba(250, 250, 250, 0.116);
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
-        scroll-snap-align: start;
+        //scroll-snap-align: start;
 
         &__title {
             font-size: 4rem;
@@ -67,5 +67,10 @@
             left: 0;
             top: 60%;
         }
+    }
+
+    &__block {
+        height: 100vh;
+        margin-top: 60vh;
     }
 }
